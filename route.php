@@ -8,6 +8,9 @@ require 'vendor/autoload.php';
 
 if(isset($_GET['r'])){
 	$r = $_GET['r'];
+	if($r[0] == '/'){
+		$r = substr($r, 1);
+	}
 	$httppos = strpos($r, 'http');
 	$f = substr($r, $httppos);
 	$r = substr($r, 0, $httppos - 1);
