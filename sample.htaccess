@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^([^/]*)/([^/]*)/([^/]*)\.html$ route.php?w=$1&h=$2&f=$3 [L]
