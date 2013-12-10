@@ -2,5 +2,6 @@ config.php
 composer.phar
 cache/
 cache/*
+vendor/*
 web.config
 composer.lock
